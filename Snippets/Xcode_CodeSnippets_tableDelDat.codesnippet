@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tableDelDat</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - UITableViewDelegate
+
+		extension &lt;#ViewController#&gt;: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    }
+}
+
+// MARK: - UITableViewDataSource
+
+extension &lt;#ViewController#&gt;: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return &lt;#numberOfRowsInSection#&gt;
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        switch indexPath.section {
+        case &lt;#section#&gt;:
+            return contentTableViewCell(for: indexPath)
+        default:
+            return UITableViewCell()
+        }
+    }
+
+    private func contentTableViewCell(for indexPath: IndexPath) -&gt; UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: &lt;#cellIdentifier#&gt;, for: indexPath) as? &lt;#UITableViewCell#&gt; {
+            cell.&lt;#property#&gt; = &lt;#value#&gt;
+            return cell
+        }
+        return UITableViewCell()
+    }
+
+    private func noContentTableViewCell() -&gt; UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: &lt;#cellIdentifier#&gt;) as? &lt;#UITableViewCell#&gt; {
+            cell.&lt;#property#&gt; = &lt;#value#&gt;
+            return cell
+        }
+        return UITableViewCell()
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8EAC1FBE-9666-4055-B59A-60D0887BB28A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates the extensions for tableView Delegate and DataSource with a default implementation of the most used methods.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TableView Delegate and DataSource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

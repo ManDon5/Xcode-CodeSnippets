@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>plist</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func readDataFromPlist() -&gt; &lt;#T: Decodable.Protocol#&gt;? {
+    if let url = Bundle.main.url(forResource: "Info", withExtension: "plist"), let data = try? Data(contentsOf: url) {
+        do {
+            return try PropertyListDecoder().decode(&lt;#T: Decodable.Protocol#&gt;.self, from: data)
+        } catch {
+            print(error)
+            return nil
+        }
+    } else {
+        return nil
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>18EC6E3C-28C5-4BA0-8C26-83C0011D759D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Decodes a plist file.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Load data from plist</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

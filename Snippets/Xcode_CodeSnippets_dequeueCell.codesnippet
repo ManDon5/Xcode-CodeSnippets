@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>dequeueCell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if let cell = tableView.dequeueReusableCell(withIdentifier: &lt;#cellIdentifier#&gt;, for: indexPath) as? &lt;#UITableViewCell#&gt; {
+    cell.&lt;#property#&gt; = &lt;#value#&gt;
+    return cell
+}
+return UITableViewCell()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EB5DB190-F5F2-42D1-8B14-3227F503DAB9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates a default body for dequeueing a tableView cell.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Dequeue TableView Cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

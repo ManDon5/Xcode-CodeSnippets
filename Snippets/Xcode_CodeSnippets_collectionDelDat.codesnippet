@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>collectionDelDat</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - UICollectionViewDelegate
+
+		extension &lt;#ViewController#&gt;: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+    }
+}
+
+// MARK: - UICollectionViewDataSource
+
+extension &lt;#ViewController#&gt;: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
+        return &lt;#numberOfItemsInSection#&gt;
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {
+        switch indexPath.section {
+        case &lt;#section#&gt;:
+            return contentCollectionViewCell(for: indexPath)
+        default:
+            return UICollectionViewCell()
+        }
+    }
+
+    private func contentCollectionViewCell(for indexPath: IndexPath) -&gt; UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: &lt;#cellIdentifier#&gt;, for: indexPath) as? &lt;#UICollectionViewCell#&gt; {
+            cell.&lt;#property#&gt; = &lt;#value#&gt;
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+
+    private func noContentCollectionViewCell(for indexPath: IndexPath) -&gt; UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: &lt;#cellIdentifier#&gt;, for: indexPath) as? &lt;#UICollectionViewCell#&gt; {
+            cell.&lt;#property#&gt; = &lt;#value#&gt;
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1CF316C4-D842-4F41-ACA6-921310A86D97</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates the extensions for collectionView Delegate and DataSource with a default implementation of the most used methods.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CollectionView Delegate and DataSource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

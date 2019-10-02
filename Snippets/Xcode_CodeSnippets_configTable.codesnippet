@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>configTable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private let refreshControl = UIRefreshControl()
+
+private func configureTableView() {
+    tableView.delegate = self
+    tableView.dataSource = self
+
+    let nib = UINib(nibName: &lt;#nibName#&gt;, bundle: nil)
+    let noContentNib = UINib(nibName: &lt;#noContentNibName#&gt;, bundle: nil)
+    tableView.register(nib, forCellReuseIdentifier: &lt;#reuseIdentifier#&gt;)
+    tableView.register(noContentNib, forCellReuseIdentifier: &lt;#noContentReuseIdentifier#&gt;)
+
+    tableView.estimatedRowHeight = &lt;#estimatedRowHeight#&gt;
+    tableView.rowHeight = UITableView.automaticDimension
+
+    if #available(iOS 10.0, *) {
+    tableView.refreshControl = refreshControl
+    } else {
+        tableView.addSubview(refreshControl)
+    }
+    refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+}
+
+@objc
+private func refresh(_ sender: Any) {
+
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D9E9274D-AC48-41BE-8858-50D766E9D1CF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates a private method with a default configuration for a tableView with pull to refresh.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TableView configuration</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

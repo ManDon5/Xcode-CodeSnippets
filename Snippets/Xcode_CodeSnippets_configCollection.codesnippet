@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>configCollection</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private func configureCollectionView() {
+    collectionView.delegate = self
+    collectionView.dataSource = self
+
+    let nib = UINib(nibName: &lt;#nibName#&gt;, bundle: nil)
+    let noContentNib = UINib(nibName: &lt;#noContentNibName#&gt;, bundle: nil)
+    collectionView.register(nib, forCellWithReuseIdentifier: &lt;#reuseIdentifier#&gt;)
+    collectionView.register(noContentNib, forCellWithReuseIdentifier: &lt;#noContentReuseIdentifier#&gt;)
+
+    collectionView.isScrollEnabled = &lt;#Bool#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BF463BD2-4697-4207-8D47-91F62BB9B5FB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates a private method with a default configuration for a collectionView.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CollectionView configuration</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
