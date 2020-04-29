@@ -11,7 +11,7 @@ Some useful Code Snippets for your Xcode. It generates you templates for the fol
   - [TableView configuration](#tableview-configuration)
   - [TableView Delegate and DataSource](#tableview-delegate-and-datasource)
 
-<br/>
+![Screen](https://github.com/ManDon5/Xcode-CodeSnippets/blob/master/Screen.png)
 
 ## Installation
 
